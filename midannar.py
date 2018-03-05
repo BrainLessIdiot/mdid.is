@@ -26,4 +26,4 @@ def send_image(filename):
 @error(404)
 def error404(error):
         return 'Nothing here, sorry'
-run()
+run(host="0.0.0.0", port=os.environ.get('PORT'))
